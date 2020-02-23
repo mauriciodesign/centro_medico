@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+</head>
+
+<style>
+    .atencion {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+    }
+
+    .fila1,
+    .fila2 {
+        padding: 30px;
+        font-size: 1.5em;
+        border-bottom: 1px solid #ccc;
+    }
+    .no-border{
+        border-bottom: none;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 0;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+</style>
+
+
+<body>
+    <h1 id="title"></h1>
+    <div class="atencion">
+        <div class="fila1"><span id="radiologia"></span></div>
+        <div class="fila1"><span id="traumatologia"></span></div>
+        <div class="fila1 no-border"><span id="dental"></span></div>
+    </div>
+    <br>
+    <br>
+    <div class="atencion">
+        <div class="fila2">
+            <h3>Radiologia</h3>
+            <span id="radiologia_atencion"></span>
+        </div>
+        <div class="fila2">
+            <h3>Traumatologia</h3>
+            <span id="traumatologia_atencion"></span>
+        </div>
+        <div class="fila2 no-border">
+            <h3>Dental</h3>
+            <span id="dental_atencion"></span>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>
